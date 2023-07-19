@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/booked">
+        <ImageView
+            android:id="@+id/iv_g_back_to_home"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ADD NEW GUEST"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:gravity="center" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <EditText
+            android:id="@+id/et_guest_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:hint="Name"/>
+
+        <EditText
+            android:id="@+id/et_guest_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:hint="Phone"/>
+
+        <EditText
+            android:id="@+id/et_guest_identify"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:hint="Identify"
+            android:inputType="number"/>
+
+        <Spinner
+            android:id="@+id/spn_room_number"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/btn_g_add_guest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#4bb769"/>
+    </LinearLayout>
+
+
+</LinearLayout>

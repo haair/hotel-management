@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_room_item"
+    app:cardCornerRadius="6dp"
+    app:contentPadding="10dp"
+    android:orientation="vertical"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="3dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical">
+            <ImageView
+                android:id="@+id/iv_all_room_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_more"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Room number:"
+                    android:textColor="@color/gray"
+                    android:gravity="center_vertical"
+                    android:height="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Room type:"
+                    android:textColor="@color/gray"
+                    android:gravity="center_vertical"
+                    android:height="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Room rate:"
+                    android:textColor="@color/gray"
+                    android:gravity="center_vertical"
+                    android:height="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Room status:"
+                    android:textColor="@color/gray"
+                    android:gravity="center_vertical"
+                    android:height="25dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_room_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="B113"
+                    android:textColor="@color/all_blue"
+                    android:textStyle="bold"
+                    android:gravity="right|center_vertical"
+                    android:height="25dp"/>
+
+                <TextView
+                    android:id="@+id/tv_room_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Single"
+                    android:textColor="@color/all_blue"
+                    android:textStyle="bold"
+                    android:gravity="right|center_vertical"
+                    android:height="25dp"/>
+
+                <TextView
+                    android:id="@+id/tv_room_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="50000 VND"
+                    android:textColor="@color/all_blue"
+                    android:textStyle="bold"
+                    android:gravity="right|center_vertical"
+                    android:height="25dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal"
+                    android:gravity="right|center_vertical">
+                    <ImageView
+                        android:id="@+id/iv_r_status"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_booked" />
+                    <TextView
+                        android:id="@+id/tv_room_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Booked"
+                        android:textColor="@color/booked"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="3dp"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

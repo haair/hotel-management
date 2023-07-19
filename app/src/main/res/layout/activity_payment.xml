@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/booked">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/tv_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="BILL DETAILS"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:gravity="center" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:layout_weight="1"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/tv_pay_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yasuo"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/all_blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone:"
+                android:layout_weight="1"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/tv_pay_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0357788423"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/all_blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Identify:"
+                android:layout_weight="1"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/tv_pay_identify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="046203000721"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/all_blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room:"
+                android:layout_weight="1"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/tv_pay_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B103"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/all_blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date join:"
+                android:layout_weight="1"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/tv_pay_date_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="31/02/2023 15:49:23"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/all_blue"/>
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total time:"
+                android:layout_weight="1"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/tv_pay_total_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 day"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/all_blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Must to pay:"
+                android:layout_weight="1"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/tv_pay_must_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5000000"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/all_blue"/>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+        <Button
+            android:id="@+id/btn_complete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Complete"
+            android:backgroundTint="@color/booked"/>
+
+    </LinearLayout>
+</LinearLayout>
